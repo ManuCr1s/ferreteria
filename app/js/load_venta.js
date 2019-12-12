@@ -1,0 +1,9 @@
+$(document).ready(function(){
+    $.ajax({
+        url:'/ferreteria/app/scripts/load_venta.php',
+        type:'POST'
+    })
+    .done(function(resp1){
+        $('#table').html(resp1);
+    })
+});
